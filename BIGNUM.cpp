@@ -43,7 +43,7 @@ string sub(string a, string b)
         else borrow=0;
         res=(char)(tmp%10 + 48) + res;
     }
-    while(res.length()>1 && res[0]=='0') res.erase(0,1);
+    while(res.length()>1 && res[0]=='0') res.erase(0,1); // xoa cac so 0 phia truoc
     if(neg) res="-"+res;
     return res;
 }
